@@ -8,6 +8,7 @@
                       at android.app.ActivityThread.handleReceiver(ActivityThread.java:2732)
 
 在代码方面作出调整后，即可实现作者的效果。 
+
 <code>
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +40,10 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     }
 }
 </code>
+
+或：
+alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+改成
+alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_TOAST);
 效果如下：
-<image src=""></image>
+<image src="http://avatar.csdn.net/E/B/9/3_u014316811.jpg"></image>
