@@ -9,7 +9,7 @@
 
 在代码方面作出调整后，即可实现作者的效果。 
 
-<code>
+<pre>
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -39,11 +39,14 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         }
     }
 }
-</code>
+</pre>
 
 或：
-alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+<pre>alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);</pre>
+
 改成
-alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_TOAST);
+<pre>alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_TOAST);</pre>
+
 效果如下：
-<image src="http://avatar.csdn.net/E/B/9/3_u014316811.jpg"></image>
+
+<image src="https://github.com/mgracy/FirstLineAndroid/blob/master/app/src/main/res/drawable/clipboard.png"></image>
